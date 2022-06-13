@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+
+
+void case4(void);
+
+
+
+int main (){
+	
+
+	return (0);
+}
+void case4(void){
+
+	//variaveis local da funcao
+	int opcao;
+
+	opcao=1;
+
+	while(opcao!=0){
+		printf("escolha qual programa voce quer :(35 a 41)\n");
+		printf("diite 0 para sair\n");
+		scanf("%d",&opcao);
+
+		switch(opcao){
+			//
+			case 35:
+				continue;
+			//
+			case 36:
+				continue;
+			//
+			case 37:
+				continue;
+			//
+			case 38:
+				continue;
+			//
+			case 39:
+				continue;
+			//
+			case 40:
+				continue;
+			//
+			case 41:
+				continue;
+			//encerra o programa
+			case 0:
+				printf("voltando ao menu principal....\n\n");
+				break;
+			default:
+				printf("questao invalida  \n");
+				continue;
+
+
+		}
+	}
+	printf("-----------------\n");
+
+ }
