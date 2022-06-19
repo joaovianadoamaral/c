@@ -4,14 +4,10 @@
 #include <time.h>
 
 //declaração das funções
-#include <sec1.h>
-
+#include "sec1.c"
 
 //100 problemas de c.
 //fazer 1 seccao por semana 
-
-
-
 
 int main(void){
     //criação das variaveis
@@ -23,7 +19,7 @@ int main(void){
     opc=1;
 
     while(opc!=0){
-        printf("digite qual a secção desejada(1 a 13) e 0 para encerrar \n");
+        printf("digite qual a seccao desejada(1 a 13) e 0 para encerrar \n");
         scanf("%d",&opc);
         switch(opc){
             //faz a secção 1
@@ -32,8 +28,11 @@ int main(void){
                 continue;//para voltar para o menu
             //sai do loop
             case 0:
-                print("encerrando...\n");
+                printf("\nencerrando...\n");
+                printf("\n======================================\n");
                 break;
+            default:
+                printf("Nao existe a opcao desejada: \n");
         }
     }
 
