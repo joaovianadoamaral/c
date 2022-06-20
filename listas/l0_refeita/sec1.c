@@ -1,8 +1,8 @@
 void sec1(void){
     //criação de menu para chamar os exercicios.
     int opc=1,inteiro,inteiro2;
-    float finteiro;
-
+    float finteiro,rdivisao;
+    char caracter,nome[15];
     while(opc!=0){
         
         printf("digite qual a questao desejada(1 a 10) e 0 para sair: \n");
@@ -14,6 +14,7 @@ void sec1(void){
                 printf("\n======================================\n");
                 //enunciado
                 printf("1. Faca um programa C para imprimir a mensagem 'Hello World!'\n");
+
                 //exercicio
                 printf("hello world \n");
                  
@@ -26,6 +27,7 @@ void sec1(void){
                
                 //enunciado
                 printf("2. Faca um programa C para ler um inteiro e mostra-lo\n");
+                
                 //exercicio
                 printf("digite um numero inteiro: \n");
                 scanf("%f",&finteiro);
@@ -47,6 +49,7 @@ void sec1(void){
 
                 //enunciado
                 printf("3. Faca um programa C para ler um inteiro e mostra-lo com a frase: 'Inteiro Digitado: X, sendo X o valor dado.'\n");
+                
                 //exercicio
                 printf("digite um numero inteiro: \n");
                 scanf("%f",&finteiro);
@@ -67,6 +70,7 @@ void sec1(void){
                 
                 //enunciado
                 printf("4. Faca um programa C para ler dois inteiros, soma-los e mostrar o resultado\n");
+                
                 //exercicio
                 printf("digite o primeiro numero inteiro: \n");
                 scanf("%d",&inteiro);
@@ -85,6 +89,7 @@ void sec1(void){
                 
                 //enunciado
                 printf("5. Faca um programa C para ler dois inteiros, soma-los e mostrar os dois numeros lidos e o resultado na frase: 'A soma de X com Y = Z', sendo X,Y os numeros lidos e Z = X +Y.\n");
+                
                 //exercicio
                 printf("digite o primeiro numero inteiro: \n");
                 scanf("%d",&inteiro);
@@ -101,6 +106,7 @@ void sec1(void){
                 printf("\n======================================\n");
                 
                 //enunciado
+                
                 printf("6. Faca um programa C para ler dois inteiros e mostrar o resultado do resto da divisao inteira primeiro e o segundo numero lidos.\n");
                 //exercicio
                 printf("digite o primeiro numero inteiro: \n");
@@ -109,7 +115,55 @@ void sec1(void){
                 scanf("%d",&inteiro2);
 
                 printf("o resto da divisao inteira de %d por %d: %d\n",inteiro,inteiro2,inteiro % inteiro2);
+                
                 printf("\n======================================\n");
+                continue;
+            //faz o exercicio 7
+            case 7: 
+                printf("\n======================================\n");
+                
+                //enunciado
+                printf("7. Faca um programa C para ler dois inteiros e mostrar o resultado da divisao real (float).\nMostre o resultado e os dois numeros lidos assim: ”x/y = z”, sendo x e y os numeroslidos e z o resultado da divisao real (float).\n");
+                //exercicio
+                printf("digite o primeiro numero inteiro: \n");
+                scanf("%d",&inteiro);
+                printf("digite o segundo numero inteiro: \n");
+                scanf("%d",&inteiro2);
+                rdivisao=inteiro/inteiro2;
+                printf("a divisão real de %d/%d=%f\n",inteiro,inteiro2,rdivisao);
+                
+                printf("\n======================================\n");
+                
+
+                continue;
+            //faz o exercicio 8
+            case 8:
+                printf("\n======================================\n");
+
+                //enunciado
+                printf("8. Faca um programa em C para ler um caractere, mostra-lo e mostrar seu codigo ASCII.\n");
+
+                //exercicio
+                printf("Digite um caractere apenas: \n");
+                setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
+                scanf("%c",&caracter);
+                printf("o caractere digitado foi :'%c' e seu codigo ASCII E '%d'",caracter,caracter);
+                
+                printf("\n======================================\n");
+
+                continue;
+            //faz o exercicio 9
+            case 9:
+                printf("\n======================================\n");
+
+                //enunciado
+                printf("9. Faca um programa em C para ler um nome do usuario (primeiro nome apenas, uma palavra, sem espacos) e mostra-lo\n");
+                
+                //exercicio
+                printf("Digite o seu primeiro nome : \n");
+                scanf("%s",&nome);
+                printf("o seu primeiro nome e : %s\n",nome);
+                continue;
             //sai do loop
             case 0:
 
