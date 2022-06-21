@@ -2,10 +2,10 @@ void sec1(void){
     //criação de menu para chamar os exercicios.
     int opc=1,inteiro,inteiro2;
     float finteiro,rdivisao;
-    char caracter,nome[15];
+    char caracter,P_nome[15],C_nome[100];
     while(opc!=0){
         
-        printf("digite qual a questao desejada(1 a 10) e 0 para sair: \n");
+        printf("digite qual a questao desejada(1 a 12) e 0 para sair: \n");
         scanf("%d",&opc);
         switch(opc){
             
@@ -161,8 +161,40 @@ void sec1(void){
                 
                 //exercicio
                 printf("Digite o seu primeiro nome : \n");
-                scanf("%s",&nome);
-                printf("o seu primeiro nome e : %s\n",nome);
+                setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
+                scanf("%s",&P_nome);
+                printf("o seu primeiro nome e : %s\n",P_nome);
+
+                printf("\n======================================\n");
+                continue;
+            //faz o exercicio 10
+            case 10:
+                printf("\n======================================\n");
+
+                //enunciado
+                printf("10. Faca um programa em C para ler o nome completo do usuario (com espacos) e mostralo.\n");
+                
+                //exercicio
+                printf("Digite o seu nome completo : \n");
+                setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
+                //para ler uma frase usaremos o comando fgets()
+                fgets(C_nome,100,stdin);
+                printf("o seu nome completo e : %s\n",C_nome);
+
+                printf("\n======================================\n");
+                continue;
+            //faz o exercicio 11
+            case 11:
+                printf("\n======================================\n");
+
+                //enunciado
+                printf("11. Faca um programa em C para ler e mostrar 4 variaveis: um inteiro, um caractere, um
+numero real (float) e uma string (palavra unica, sem espacos). Os dados lidos devem
+ser apresentados como mostrado abaixo (sendo X,Y,Z,S os dados lidos):\n");
+                
+                //exercicio
+                printf("Digite o seu nome completo : \n");
+                setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
                 continue;
             //sai do loop
             case 0:
