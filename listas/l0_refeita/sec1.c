@@ -1,7 +1,7 @@
 void sec1(void){
     //criação de menu para chamar os exercicios.
     int opc=1,inteiro,inteiro2;
-    float finteiro,rdivisao;
+    float finteiro,rdivisao,expo,num1,num2;
     char caracter,P_nome[15],C_nome[100];
     while(opc!=0){
         
@@ -188,14 +188,39 @@ void sec1(void){
                 printf("\n======================================\n");
 
                 //enunciado
-                printf("11. Faca um programa em C para ler e mostrar 4 variaveis: um inteiro, um caractere, um
-numero real (float) e uma string (palavra unica, sem espacos). Os dados lidos devem
-ser apresentados como mostrado abaixo (sendo X,Y,Z,S os dados lidos):\n");
-                
+                printf("11. Faca um programa em C para ler e mostrar 4 variaveis: um inteiro, um caractere, um numero real (float) e uma string (palavra unica, sem espacos).\nOs dados lidos devem ser apresentados como mostrado abaixo (sendo X,Y,Z,S os dados lidos):\n");
                 //exercicio
-                printf("Digite o seu nome completo : \n");
+                printf("Digite um inteiro: \n");
+                scanf("%d",&inteiro);
+                printf("Digite um caracter: \n");
                 setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
+                scanf("%c",&caracter);
+                printf("Digite um numero real: \n");
+                scanf("%f",&finteiro);
+                printf("Digite uma string: \n");
+                setbuf(stdin,NULL);//para que não leia o caractere \n ou espaço automaticamente
+                fgets(C_nome,100,stdin);
+                printf("\n Inteiro: %d",inteiro);
+                printf("\n caracter: %c",caracter);
+                printf("\n float: %f",finteiro);
+                printf("\n string: %s",C_nome);
+
+                printf("\n======================================\n");
+
                 continue;
+            //faz o exercicio 12
+            case 12:
+                printf("\n======================================\n");
+
+                //enunciado
+                printf("12. Faca um programa em C para ler dois numeros (x e y) e mostrar o resultado da potencia do primeiro elevado ao segundo, isto e z = x^y.\n");
+                //exercicio
+                printf("digite o numero x: \n");
+                scanf("%f",&num1);
+                printf("digite o numero y: \n");
+                scanf("%f",&num2);
+                expo=pow(num1,num2);
+                printf("isto e %.2f = %.2f^%.2f\n",expo,num1,num2);
             //sai do loop
             case 0:
 
