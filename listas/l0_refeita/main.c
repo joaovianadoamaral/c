@@ -5,7 +5,7 @@
 
 //declaração das funções
 #include "sec1.c"
-
+#include "sec2.c"
 //100 problemas de c.
 //fazer 1 seccao por semana 
 
@@ -25,6 +25,10 @@ int main(void){
             //faz a secção 1
             case 1:
                 sec1();
+                continue;//para voltar para o menu
+            //faz a secção 2
+            case 2:
+                sec2();
                 continue;//para voltar para o menu
             //sai do loop
             case 0:
