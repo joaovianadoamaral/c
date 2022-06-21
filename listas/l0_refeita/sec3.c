@@ -1,4 +1,4 @@
-void sec2(void){
+void sec3(void){
     //criação de menu para chamar os exercicios.
     int opc=1;
     while(opc!=0){
