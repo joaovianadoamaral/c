@@ -73,15 +73,28 @@ void sec5(void){
                 }
                 printf("\n======================================\n");
                 continue;
-            //faz o exercicio 16
-            case 16:
+            //faz o exercicio 45
+            case 45:
                 printf("\n======================================\n");
-                
+            
                 //enunciado
-
+                printf("45. Faca um programa em C para gerar um quadrado de lado N, isto e, N linhas,\ncom linhas que vao de N a 1. O valor de 3 ≤ N ≤ 15 e dado pelo usuario.\nA figura abaixo mostra o caso de N = 5\n");
                 //exercicio
-                
+                printf("digite o numero n: \n");
+                scanf("%d",&n);
+                if(n>=3&&n<=15){
+                    for(int i=0;i<n;i++){
+                        for(int j=n;j>0;j--){
+                            printf("%d ",j);
+                        }   
+                        printf("\n");
+                    }
+                }
+                else{
+                    printf("numero 'n' digita invalido. \n");
+                }
                 printf("\n======================================\n");
+            
                 continue;
             //faz o exercicio 17
             case 17:
