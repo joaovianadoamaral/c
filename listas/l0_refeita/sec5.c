@@ -96,13 +96,26 @@ void sec5(void){
                 printf("\n======================================\n");
             
                 continue;
-            //faz o exercicio 17
-            case 17:
+            //faz o exercicio 46
+            case 46:
                 printf("\n======================================\n");
                 
                 //enunciado
-
+                printf("46. Faca um programa em C para gerar um triangulo retangulo, formado de asteriscos, de catetos de tamanho N (N asteriscos),\nou seja N linhas e primeira linha de N asteriscos, segunda linha de N-1 asteriscos, etc.\nO valor de 3 ≤ N ≤ 15 e dado pelo usuario. A figura abaixo mostra o caso de N = 5.\n");
                 //exercicio
+                printf("digite o numero n: \n");
+                scanf("%d",&n);
+                if(n>=3&&n<=15){
+                    for(int i=n;i>0;i--){
+                        for(int j=0;j<i;j++){
+                            printf("* ");
+                        }   
+                        printf("\n");
+                    }
+                }
+                else{
+                    printf("numero 'n' digita invalido. \n");
+                }
                 
                 printf("\n======================================\n");
                 continue;
