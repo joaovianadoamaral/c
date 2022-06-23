@@ -1,6 +1,6 @@
 void sec5(void){
     //criação de menu para chamar os exercicios.
-    int opc=1,n;
+    int opc=1,n,cont;
     while(opc!=0){
         
         printf("digite qual a questao desejada(42 a 49) e 0 para sair: \n");
@@ -119,14 +119,28 @@ void sec5(void){
                 
                 printf("\n======================================\n");
                 continue;
-            //faz o exercicio 18
-            case 18:
+            //faz o exercicio 47
+            case 47:
                 printf("\n======================================\n");
                 
                 //enunciado
-
+                printf("47. Faca um programa em C para gerar um triangulo retangulo formado de asteriscos, de catetos de tamanho N (N asteriscos),\nou seja N linhas e primeira linha com 1 asterisco, segunda linha 2 asteriscos, ate a ultima linha de N asteriscos.\nO valor de 3 <= N <= 15 e dado pelo usuario. A figura abaixo mostra o caso de N = 5\n");
                 //exercicio
-                
+                printf("digite o numero n: \n");
+                scanf("%d",&n);
+                cont=1;
+                if(n>=3&&n<=15){
+                    for(int i=n;i>0;i--){
+                        for(int j=0 ;j<cont;j++){
+                            printf("* ");
+                        }   
+                        cont++;
+                        printf("\n");
+                    }
+                }
+                else{
+                    printf("numero 'n' digita invalido. \n");
+                }
                 printf("\n======================================\n");
                 continue;
             //faz o exercicio 19
