@@ -24,7 +24,7 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 printf("\n======================================\n");
                 continue;
@@ -46,7 +46,7 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 
                 printf("\n======================================\n"); 
@@ -69,7 +69,7 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 printf("\n======================================\n");
                 continue;
@@ -91,7 +91,7 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 printf("\n======================================\n");
             
@@ -114,7 +114,7 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 
                 printf("\n======================================\n");
@@ -139,68 +139,56 @@ void sec5(void){
                     }
                 }
                 else{
-                    printf("numero 'n' digita invalido. \n");
+                    printf("numero 'n' digitado invalido. \n");
                 }
                 printf("\n======================================\n");
                 continue;
-            //faz o exercicio 19
-            case 19: 
+            //faz o exercicio 48
+            case 48: 
                 printf("\n======================================\n");
                 
                 //enunciado
-
+                printf("48. Faca um programa em C para gerar um triangulo de numeros, de N linhas, com linhas de numeros crescentes,\na partir de 1 ate N na primeira linha, de 1 ate N -1 na segunda, e assim por diante, ate a ultima linha com apenas o numero 1.\nA figura abaixo mostra o caso de N = 5. Considere 2 ≤ N ≤ 9.\n");
                 //exercicio
-                
+                printf("digite o numero n: \n");
+                scanf("%d",&n);
+                if(n>=2 && n<=9){
+                    cont=0;
+                    for(int i=0; i<n;i++){
+                    for(int j=1; j<=(n-cont);j++){
+                        printf("%d ",j);
+                        }   
+                        printf("\n");
+                        cont++;
+                    }
+                }
+                else{
+                     printf("numero 'n' digitado invalido. \n");
+                }
                 printf("\n======================================\n");
                 continue;
-            //faz o exercicio 20
-            case 20:
+            //faz o exercicio 49
+            case 49:
                 printf("\n======================================\n");
                 
                 //enunciado
-
+                printf("49. Faca um programa em C para gerar um triangulo de numeros, de N linhas, com linhas de numeros decrescentes,\na partir de N ate 1 na primeira linha, de N ate 2 na segunda, e assim por diant,\nate a ultima linha com apenas o numero igual N.\nA figura abaixo mostra o caso de N = 5. Considere 2 ≤ N ≤ 9.");
                 //exercicio
-                
-                printf("\n======================================\n");
-                continue;
-            //faz o exercicio 21
-            case 21:
-                printf("\n======================================\n");
-                
-                //enunciado
-
-                //exercicio
-                
-                printf("\n======================================\n");
-                continue;
-            //faz o exercicio 22
-            case 22:
-               printf("\n======================================\n");
-                
-                //enunciado
-
-                //exercicio
-                
-                printf("\n======================================\n");
-                continue;
-            //faz o exercicio 23
-            case 23:
-               printf("\n======================================\n");
-                
-                //enunciado
-
-                //exercicio
-                
-                printf("\n======================================\n");
-                continue;
-            //faz o exercicio 24
-            case 24:
-                printf("\n======================================\n");
-                
-                //enunciado
-
-                //exercicio
-                
+                printf("digite o numero n: \n");
+                scanf("%d",&n);
+                if(n>=2 && n<=9){
+                    cont=0;
+                    for(int i=0; i<n;i++){
+                    for(int j=n; j>(0+cont);j--){
+                        printf("%d ",j);
+                        }   
+                        printf("\n");
+                        cont++;
+                    }
+                }
+                else{
+                     printf("numero 'n' digitado invalido. \n");
+                }
                 printf("\n======================================\n");
                 continue;
             //sai do loop
