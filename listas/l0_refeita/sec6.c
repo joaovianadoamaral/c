@@ -1,28 +1,63 @@
-void sec2(void){
+void sec6(void){
     //criação de menu para chamar os exercicios.
-    int opc=1;
+    int opc=1,inteiro,aux;
+    float fint;
     while(opc!=0){
         
         printf("digite qual a questao desejada(13 a 24) e 0 para sair: \n");
         scanf("%d",&opc);
         switch(opc){
-            //faz o exercicio 13
-            case 13: 
+            //faz o exercicio 50
+            case 50: 
                 printf("\n======================================\n");
                 
                 //enunciado
-
+                printf("");
                 //exercicio
-
+                printf("digite o numero n inteiro positivo: \n");
+                scanf("%f",&fint);
+                inteiro=fint;
+                aux=0;//faz com que o primeiro numero comece menor a cada linha
+                if(inteiro==fint && inteiro>0){
+                    //numero de linhas
+                    for(int i=0; i<inteiro; i++){
+                        //formato das colunas
+                        for(int j=inteiro-aux; j>0;j--) {
+                            printf("%d ",j);
+                        }
+                        aux++;
+                        printf("\n");
+                    }
+                }
+                else{
+                    printf("numero digitado invalido. \n");
+                }
                 printf("\n======================================\n");
                 continue;
-            //faz o exercicicio 14
-            case 14:        
+            //faz o exercicicio 51
+            case 51:        
                 printf("\n======================================\n");
                 
-                //enunciado
-
+                 //enunciado
+                printf("");
                 //exercicio
+                printf("digite o numero n inteiro positivo: \n");
+                scanf("%d",&inteiro);
+                aux=inteiro-1;
+                if(inteiro>0){
+                    //numero de linhas
+                    for(int i=0; i<inteiro; i++){
+                        //formato das colunas
+                        for(int j=0; j<inteiro-aux;j++) {
+                            printf("*");
+                        }
+                        aux--;
+                        printf("\n");
+                    }
+                }
+                else{
+                    printf("numero digitado invalido. \n");
+                }
                 
                 printf("\n======================================\n"); 
                 continue;
